@@ -14,12 +14,13 @@ function App() {
   // you'll need to track a city name, which starts as the city name of your choice.
   // finally, you'll need an array of slogans, which could start out as ['The City of Excellence'] for example
   const [waterfront, setWaterfront] = useState('waterfront');
-  const [sylyline, setSkyline] = useState('skyline');
+  const [skyline, setSkyline] = useState('skyline');
   const [castle, setCastle] = useState('castle');
 
   return (
     <div className="App">
       <City castleId={castle} />
+      <City skylineId={skyline} />
 
       {/* here, the City component takes in skylineId, waterfrontId, castleId as props. It'll use those ids to render pictures correctly. */}
       <h1>
