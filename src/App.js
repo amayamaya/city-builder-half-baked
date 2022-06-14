@@ -17,6 +17,8 @@ function App() {
   const [skyline, setSkyline] = useState(1);
   const [castle, setCastle] = useState(1);
   const [cityName, setCityName] = useState('pdx');
+  const [slogans, setSlogans] = useState(['']);
+  //*** the second one is always the updated function, the first is the actual state values
 
   return (
     <div className="App">
@@ -38,6 +40,7 @@ function App() {
           <SkylineDropdown setSkyline={setSkyline} />
           <CastleDropdown setCastle={setCastle} />
         </section>
+        <SloganForm setSlogans={setSlogans} slogans={slogans} />
         {/* here, the SloganForm component takes in the setSlogans state handler function and the slogans array that live in state */}
         {/* here, the SloganList component takes the array of slogans that lives in state */}
       </div>
