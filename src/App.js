@@ -13,9 +13,9 @@ function App() {
   // You'll need to keep track of a skylineId, waterfrontId, and castleId. All these start out as 1
   // you'll need to track a city name, which starts as the city name of your choice.
   // finally, you'll need an array of slogans, which could start out as ['The City of Excellence'] for example
-  const [waterfront, setWaterfront] = useState('waterfront');
-  const [skyline, setSkyline] = useState('skyline');
-  const [castle, setCastle] = useState('castle');
+  const [waterfront, setWaterfront] = useState(1);
+  const [skyline, setSkyline] = useState(1);
+  const [castle, setCastle] = useState(1);
   const [cityName, setCityName] = useState('pdx');
 
   return (
