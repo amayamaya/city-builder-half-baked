@@ -3,9 +3,9 @@ import './App.css';
 import SkylineDropdown from './SkylineDropdown';
 import WaterfrontDropdown from './WaterfrontDropdown';
 import CastleDropdown from './CastleDropdown';
-import SloganList from './SloganList';
-import SloganForm from './SloganForm';
-import CityNameInput from './CityNameInput';
+// import SloganList from './SloganList';
+// import SloganForm from './SloganForm';
+// import CityNameInput from './CityNameInput';
 import City from './City';
 
 function App() {
@@ -19,9 +19,7 @@ function App() {
 
   return (
     <div className="App">
-      <City castleId={castle} />
-      <City skylineId={skyline} />
-
+      <City waterfrontId={waterfront} skylineId={skyline} castleId={castle} />
       {/* here, the City component takes in skylineId, waterfrontId, castleId as props. It'll use those ids to render pictures correctly. */}
       <h1>
         {/* dynamically update the city name here using state */}
